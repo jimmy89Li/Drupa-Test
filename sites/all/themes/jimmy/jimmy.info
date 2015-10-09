@@ -1,0 +1,7 @@
+name = jimmy
+description = jimmy
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = style.css
