@@ -1,14 +1,20 @@
-  <div id="header">
-    <a href="<?php print $front_page;?>">
-      <img class="logo" src="/<?php print $directory;?>/logo.png" alt="<?php print $site_name;?>"/>
-    </a>
- 
-    <?php if ($main_menu): ?>
-      <?php print theme('links', $main_menu); ?>
-    <?php endif; ?>
+<div id="wrapper">
 
+  <div id="header">
+	<?php if ($page['header']):?>
+			<?php if ($logo): ?>
+				<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+					<img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+				</a>
+			<?php endif; ?>
+			
+		<?php print render($page['header']); ?>
+			<?php if ($main_menu): ?>
+				<?php print theme('links', $main_menu); ?>
+			<?php endif; ?>
+	<?php endif; ?>
   </div>
- 
+	
  <?php if ($page['sidebar_first']): ?>    
     <div id="sidebar1">
       <?php print render($page['sidebar_first']); ?>
@@ -26,12 +32,7 @@
 
     <?php print render($page['content']); ?>
   </div>
-
-  <?php if ($page['sidebar_second']): ?>    
-    <div id="sidebar2">
-      <?php print render($page['sidebar_second']); ?>
-    </div>
-  <?php endif; ?>  
+ 
   
 
   <div id="footer">
@@ -39,3 +40,5 @@
       <?php print render($page['footer']); ?>
     <?php endif; ?>  
   </div>
+
+</div>
