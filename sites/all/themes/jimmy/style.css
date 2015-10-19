@@ -1,48 +1,35 @@
-html, body{margin:0;padding:0}
-body{background-color:silver}
-/* Main Menu */
-div#block-system-main-menu{
-	
+html,body{margin:0;padding:0}
+
+
+/* Content */
+div#content {
+    float: left;
+    width: 75%;
+    height: 100%;
+    min-height: 320px;
 }
-div#block-system-main-menu h2 {
-    display: none;
+
+/* Sidebar 1 */
+div#sidebar1 {
+    height: 200px;
+    float: left;
+    min-width: 23%;
+    text-align: center;
 }
-#block-system-main-menu .content {
-    background-color: white;
-}
-#block-system-main-menu .content .menu{
-	margin-left:200px;
-}
-ul.menu {
-    display: inline-flex;
+
+.item-list li {
+    list-style-image: none;
+    list-style-type: none;
 }
 ul li.leaf {
     list-style-image: none;
     list-style-type: none;
 }
 
-/* Sidebar 1 */
-div#sidebar1 {
-    float: left;
-	width: 18%;
-} 
-/* User Login Area */
-div#block-user-login h2 {
-    display: none;
-}
-/* Content */
-div#content {
-    float: left;
-	background-color:white;
-	width: 80%;
-}
 /* Footer */
 div#footer {
+    background-color: silver;
     float: left;
-    position: absolute;
-    bottom: 0;
-	height:100px;
-	background-color:gray;
-	text-align:center;
-	width:100%;
+    width: 100%;
+    text-align: center;
 }
