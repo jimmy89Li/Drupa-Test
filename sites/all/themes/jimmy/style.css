@@ -34,7 +34,7 @@ ul li.leaf {
 /* Sidebar 1 */
 div#sidebar1 {
     float:left;
-	width:18%;
+	width:20%;
 } 
 /* User Login Area */
 div#block-user-login h2 {
@@ -43,6 +43,7 @@ div#block-user-login h2 {
 /* Content */
 div#wrapper {
     padding:0 80px;
+	min-height:760px;
 }
 div#content {
     float:left;
