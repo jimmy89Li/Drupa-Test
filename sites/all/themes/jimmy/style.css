@@ -21,6 +21,11 @@ ul li.leaf {
     list-style-type: none;
 }
 
+/* Logo */
+#logo img {
+    max-width:120px;
+}
+
 /* Sidebar 1 */
 div#sidebar1 {
     float:left;
