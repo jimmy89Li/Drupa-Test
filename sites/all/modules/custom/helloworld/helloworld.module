@@ -14,6 +14,17 @@
 	function helloworld_page() {
 		global $user;
 		$name = $user->name;
-		$output = "Hello, " .$name;
+		$output = "<ol>";
+		
+		for($i=0; $i < 10; $i++) {
+			$output .= "<li>";
+			$output .= "Hello, " .$name;
+			$output .= "</li>";
+		}
+		
+		$output .= "</ol>";
+		
 		return $output;
+		
+		
 	}
