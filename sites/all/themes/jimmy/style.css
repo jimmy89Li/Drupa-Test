@@ -1,24 +1,29 @@
 html, body{margin:0;padding:0}
 body{background-color:white}
+/* Header */
+div#header {
+    margin-top:10px;
+}
+
 /* Main Menu */
 div#block-system-main-menu{
 	
 }
 div#block-system-main-menu h2 {
-    display: none;
+    display:none;
 }
 #block-system-main-menu .content {
-    background-color: white;
+    background-color:white;
 }
 #block-system-main-menu .content .menu{
 	margin-left:200px;
 }
 ul.menu {
-    display: inline-flex;
+    display:inline-flex;
 }
 ul li.leaf {
-    list-style-image: none;
-    list-style-type: none;
+    list-style-image:none;
+    list-style-type:none;
 }
 
 /* Logo */
@@ -36,6 +41,9 @@ div#block-user-login h2 {
     display:none;
 }
 /* Content */
+div#wrapper {
+    padding:0 80px;
+}
 div#content {
     float:left;
 	background-color:white;
