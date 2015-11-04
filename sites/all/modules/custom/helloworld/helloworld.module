@@ -1,0 +1,19 @@
+<?php
+
+	function helloworld_menu() {
+		$items['helloworld-page'] = array (
+			'title' => 'Hello World Page Title',
+			'page callback' => 'helloworld_page',
+			'access arguments' => array('access content'),
+			'type' => MENU_CALLBACK ,
+		);
+		
+		return $items;
+	}
+	
+	function helloworld_page() {
+		global $user;
+		$name = $user->name;
+		$output = "Hello, " .$name;
+		return $output;
+	}

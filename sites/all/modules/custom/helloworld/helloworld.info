@@ -1,0 +1,4 @@
+name = helloworld
+description = Hello World Module
+core = 7.x
+package = custom
